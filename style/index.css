@@ -1,0 +1,89 @@
+@import url("../fonts/GothamPro/style.css");
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.individual_block {
+    display: flex;
+    background-image: url(../images/background_image.png);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    width: 90%;
+}
+
+.header_menu_button_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 57px;
+    border-radius: 28px;
+    background-color: #333333;
+    opacity: 0.95;
+    transition: 0.5s;
+}
+
+.header_menu_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 57px;
+    border-radius: 28px;
+    background-color: #333333;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.header_menu_button_text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-weight: 300;
+}
+
+.header_menu_button:hover,
+.header_menu_button_active:hover {
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.individual_block_content {
+    display: flex;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_header_text {
+    margin-top: 140px;
+    font-size: 128px;
+    letter-spacing: 2px;
+    line-height: 175px;
+    color: #ffffff;
+    font-family: "Stalinist One", cursive;
+}
+
+.main_header_red_text {
+    color: #CC3333;
+}
