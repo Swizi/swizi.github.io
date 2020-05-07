@@ -2,34 +2,93 @@
 <html lang="ru">
 
 <head>
-    <title>Web page</title>
-    <link rel="stylesheet" href="style/index.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web page</title>
+  <link rel="stylesheet" href="style/index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="body">
-    <div class="individual_block">
-        <div class="individual_block_content">
-            <ul class="header_menu">
-                <li class="header_menu_button_active">
-                    <span class="header_menu_button_text">Главная</span>
-                </li>
-                <li class="header_menu_button">
-                    <span class="header_menu_button_text">Обо мне</span>
-                </li>
-                <li class="header_menu_button">
-                    <span class="header_menu_button_text">Портфолио</span>
-                </li>
-                <li class="header_menu_button">
-                    <span class="header_menu_button_text">Контакты</span>
-                </li>
-            </ul>
-            <h1 class="main_header_text">
-                Денис <span class="main_header_red_text">Босый</span>.
-            </h1>
-        </div>
+  <div class="individual_block">
+    <div class="individual_block_content">
+      <ul class="header_menu">
+        <li class="header_menu_button_active">
+          <span class="header_menu_button_text">Главная</span>
+        </li>
+        <li class="header_menu_button">
+          <a class="a" href="javascript://0" onclick="slowScroll('#books_block')">
+            <span class="header_menu_button_text">Обо мне</span>
+          </a>
+        </li>
+        <li class="header_menu_button">
+          <span class="header_menu_button_text">Портфолио</span>
+        </li>
+        <li class="header_menu_button">
+          <span class="header_menu_button_text">Контакты</span>
+        </li>
+      </ul>
+      <h1 id="name" class="main_header_text">
+        Денис
+      </h1>
+      <h1 class="main_header_red_text" id="surname">
+        Босый.
+      </h1>
+      <div class="individual_text_block">
+        <h2 class="main_individual_text_header">
+          HTML, CSS, JS
+        </h2>
+        <p class="main_individual_text">
+          Открыт к совместным проектам и сотрудничеству в сфере Web программирования
+        </p>
+      </div>
     </div>
+  </div>
+  <div class="books_block" id="books_block">
+    <h2 class="books_block_header_text">
+      Мои отзывы о некоторых книгах:
+    </h2>
+    <div class="book_carousel_block">
+      <div class="slider">
+        <div class="slider__item">
+          <img class="slider_image" src="images/rich_person_babylon_book.png" alt="book" />
+          <div class="description_block">
+            <p class="description_block_text">Равным образом рамки и место обучения кадров позволяет оценить значение систем массового участия. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании
+              дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+              влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider_image" src="images/rich_person_babylon_book.png" alt="book" />
+          <div class="description_block">
+            <p class="description_block_text">Равным образом рамки и место обучения кадров позволяет оценить значение систем массового участия. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании
+              дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+              влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider_image" src="images/rich_person_babylon_book.png" alt="book" />
+          <div class="description_block">
+            <p class="description_block_text">Равным образом рамки и место обучения кадров позволяет оценить значение систем массового участия. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании
+              дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+              влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider_image" src="images/rich_person_babylon_book.png" alt="book" />
+          <div class="description_block">
+            <p class="description_block_text">Равным образом рамки и место обучения кадров позволяет оценить значение систем массового участия. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании
+              дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+              влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- <img src="" </div> -->
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script/slick.min.js"></script>
+    <script src="script/index.js"></script>
 
 </body>
 
