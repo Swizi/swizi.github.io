@@ -4,6 +4,12 @@
   padding: 0;
   margin: 0;
   outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body,
@@ -235,10 +241,28 @@ html {
   font-family: "Gotham Pro Light";
   font-weight: 100;
   font-style: italic;
+  margin: 15px 0 15px 0;
 }
 
 .description_block {
+  display: inline-table;
+  border: solid #CC3333;
   padding: 40px;
-  border: 15px solid #CC3333;
+  border-width: 0 15px;
   width: 50%;
+  border-collapse: collapse;
+}
+
+.slider .description_block:last-child:before,
+.slider .description_block:last-child:after {
+  margin: 5px 0 5px 0;
+  border-top: 15px solid #CC3333;
+  border-bottom: 15px solid #CC3333;
+}
+
+.slider .description_block:before,
+.slider .description_block:after {
+  display: table-cell;
+  content: "\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0";
+  width: .25em;
 }
