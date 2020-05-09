@@ -20,9 +20,11 @@
             <span class="header_menu_button_text">Обо мне</span>
           </li>
         </a>
-        <li class="header_menu_button">
-          <span class="header_menu_button_text">Портфолио</span>
-        </li>
+        <a class="a" href="javascript://0" onclick="slowScroll('#portfolio_block')">
+          <li class="header_menu_button">
+            <span class="header_menu_button_text">Портфолио</span>
+          </li>
+        </a>
         <li class="header_menu_button">
           <span class="header_menu_button_text">Контакты</span>
         </li>
@@ -48,15 +50,15 @@
       Мои отзывы о некоторых книгах:
     </h2>
     <div class="book_carousel_block">
-      <div class="slider">
+      <div class="books_slider">
         <div class="slider__item">
-          <img class="slider_image" src="images/rich_person_babylon_book.png" alt="book" />
+          <img class="slider_image" src="images/rich_person_babylon_book.png" alt="Первая из серии книг, которую я прочитал в 11 классе" />
           <div class="description_block">
             <p class="description_block_text">Хорошая книга об истории денег.</p>
           </div>
         </div>
         <div class="slider__item">
-          <img class="slider_image" src="images/ferrari_book.png" alt="book" />
+          <img class="slider_image" src="images/ferrari_book.png" alt="Здесь мне понравилось, как автор сочетает восточную мудрость и жизнь в американской гонке за успехом" />
           <div class="description_block">
             <p class="description_block_text">Хорошая книга об американской жизни адвокатов в Нью Йорке.</p>
           </div>
@@ -77,12 +79,34 @@
               влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
           </div>
         </div>
-
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script/slick.min.js"></script>
-    <script src="script/index.js"></script>
+  </div>
+  <div class="portfolio_block" id="portfolio_block">
+    <h2 class="portfolio_header_text">Моё портфолио.</h2>
+    <div class="portfolio_slider">
+      <div class="slider__item">
+        <a href="https://medtehnika12.ru/">
+          <img class="slider_image" src="images/portfolio_medtehnika.png" alt="medtehnika12.ru" />
+        </a>
+        <h3 class="portfolio_slider_text">Работа #1<br>Медтехника 12</h3>
+      </div>
+      <div class="slider__item">
+        <a href="http://tech-price.herokuapp.com/">
+          <img class="slider_image" src="images/portfolio_tech_price.png" alt="tech-price.herokuapp.com" />
+        </a>
+        <h3 class="portfolio_slider_text">Работа #2<br>TechPrice - твой отпуск</h3>
+      </div>
+    </div>
+  </div>
+  <div class="feedback_block">
+    <h4 class="feedback_header_text">
+      Связаться со мной.
+    </h4>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script/slick.min.js"></script>
+  <script src="script/index.js"></script>
 
 </body>
 

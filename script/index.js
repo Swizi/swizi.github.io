@@ -64,10 +64,12 @@ function consoleText(word, id1, id2, colors) {
 }
 
 $(document).ready(function() {
-  $(".slider").slick({
+  $(".books_slider").slick({
     dots: true
   });
+  $(".portfolio_slider").slick({});
 });
+
 
 function slowScroll(id) {
   var offset = 60;

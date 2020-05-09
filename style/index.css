@@ -159,7 +159,7 @@ html {
   font-weight: 800;
 }
 
-.slider_image {
+.books_slider .slider_image {
   box-shadow: -15px 0 20px rgba(0, 0, 0, 0.5);
   margin-left: 40px;
 }
@@ -170,17 +170,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 140px 0 0 0;
+  margin: 140px 0 140px 0;
 }
 
-.slider__item {
+.books_slider .slider__item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.slider {
+.books_slider {
   min-width: 0;
   width: 70%;
 }
@@ -193,22 +193,22 @@ html {
   overflow: hidden;
 }
 
-.slider .slick-arrow {
+.books_slider .slick-arrow {
   font-size: 0;
 }
 
-.slider .slick-dots {
+.books_slider .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slider .slick-dots li {
+.books_slider .slick-dots li {
   list-style-type: none;
   margin: 0 10px;
 }
 
-.slider .slick-dots button {
+.books_slider .slick-dots button {
   border: none;
   font-size: 0;
   width: 30px;
@@ -218,18 +218,18 @@ html {
   transition: 0.5s ease;
 }
 
-.slider .slick-dots button:hover {
+.books_slider .slick-dots button:hover {
   cursor: pointer;
 }
 
-.slider .slick-dots li.slick-active button {
+.books_slider .slick-dots li.slick-active button {
   width: 45px;
   height: 45px;
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.45));
 }
 
-.slider__item:first-child:before,
-.slider__item:first-child:after {
+.books_slider .slider__item:first-child:before,
+.books_slider .slider__item:first-child:after {
   border-top: 1px solid #000;
 }
 
@@ -253,16 +253,99 @@ html {
   border-collapse: collapse;
 }
 
-.slider .description_block:last-child:before,
-.slider .description_block:last-child:after {
+.books_slider .description_block:last-child:before,
+.books_slider .description_block:last-child:after {
   margin: 5px 0 5px 0;
   border-top: 15px solid #CC3333;
   border-bottom: 15px solid #CC3333;
 }
 
-.slider .description_block:before,
-.slider .description_block:after {
+.books_slider .description_block:before,
+.books_slider .description_block:after {
   display: table-cell;
   content: "\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0";
   width: .25em;
+}
+
+.portfolio_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333333;
+  width: 100%;
+  min-width: 0;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+}
+
+.portfolio_header_text {
+  font-size: 72px;
+  letter-spacing: -4px;
+  line-height: 24px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-weight: 800;
+  margin: 150px 0 80px 0;
+}
+
+.portfolio_slider .slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio_slider {
+  min-width: 0;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 0 120px 0;
+}
+
+.portfolio_slider_text {
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-weight: 300;
+  text-align: center;
+}
+
+.portfolio_slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+  margin: -150px 0 0 0;
+  z-index: 10;
+  width: 142px;
+  height: 203px;
+  border: 0;
+}
+
+.slick-arrow:hover {
+  cursor: pointer;
+}
+
+.portfolio_slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/left_arrow.png") 0 0 no-repeat;
+}
+
+.portfolio_slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../images/right_arrow.png") 0 0 no-repeat;
+}
+
+.feedback_header_text {
+  font-size: 60px;
+  letter-spacing: -3px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Gotham Pro Bold";
+  font-weight: 800;
+  margin: 90px 0 0 0;
 }
