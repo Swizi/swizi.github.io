@@ -25,9 +25,11 @@
             <span class="header_menu_button_text">Портфолио</span>
           </li>
         </a>
-        <li class="header_menu_button">
-          <span class="header_menu_button_text">Контакты</span>
-        </li>
+        <a class="a" href="javascript://0" onclick="slowScroll('#feedback_block')">
+          <li class="header_menu_button">
+            <span class="header_menu_button_text">Контакты</span>
+          </li>
+        </a>
       </ul>
       <h1 id="name" class="main_header_text">
         Денис
@@ -99,14 +101,38 @@
       </div>
     </div>
   </div>
-  <div class="feedback_block">
-    <h4 class="feedback_header_text">
-      Связаться со мной.
-    </h4>
+  <div class="feedback_block" id="feedback_block">
+    <div class="feedback_block_form">
+      <h4 class="feedback_header_text">
+        Связаться со мной.
+      </h4>
+      <div class="feedback_block_block">
+        <div class="form_header_block">
+          <h5 class="form_header_text">
+            Денис Босый
+          </h5>
+          <img src="images/web_icon.png" alt="Пожалуйста, пишите мне здесь" class="web_icon" />
+        </div>
+        <form method="POST" action="scripts/message.php" class="feedback_form">
+          <input name="email" class="input_form_text" type="email" required="required" placeholder="Ваш email" id="email" />
+          <input name="phone" class="input_form_text" type="tel" placeholder="Номер телефона" id="phone" />
+          <input name="message" class="input_form_text" type="text" required="required" placeholder="Сообщение" id="message" />
+          <input name="submit" type="submit" value="ОТПРАВИТЬ" class="input_form_submit" />
+        </form>
+      </div>
+    </div>
   </div>
+  <footer class="footer_block">
+    <h5 class="footer_text">
+      Вы можете связаться со мной в <a class="footer_red_text a" href="http://t.me/Swizi0">Telegram</a>:
+    </h5>
+    <a href="http://t.me/Swizi0" class="a">
+      <img src="images/telegram_icon.png" alt="Пишите мне сюда или в форму. Никуда более" />
+    </a>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="script/slick.min.js"></script>
-  <script src="script/index.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/index.js"></script>
 
 </body>
 
