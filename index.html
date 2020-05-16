@@ -9,34 +9,66 @@
 </head>
 
 <body class="body">
+  <ul id="dropdown_menu">
+    <li onclick="closeMenu()" class="a">
+      <span class="header_menu_button_text" style="color: #000000;">Меню</span>
+    </li>
+    <li onclick="closeMenu()" class="a">
+      <span class="header_menu_button_text" style="color: #000000;">Главная</span>
+    </li>
+    <a class="a" href="javascript://0" onclick="slowScroll('#books_block')">
+      <li onclick="closeMenu()">
+        <span class="header_menu_button_text" style="color: #000000;">Обо мне</span>
+      </li>
+    </a>
+    <a class="a" href="javascript://0" onclick="slowScroll('#portfolio_block')">
+      <li onclick="closeMenu()">
+        <span class="header_menu_button_text" style="color: #000000;">Портфолио</span>
+      </li>
+    </a>
+    <a class="a" href="javascript://0" onclick="slowScroll('#footer_block')">
+      <li onclick="closeMenu()">
+        <span class="header_menu_button_text" style="color: #000000;">Контакты</span>
+      </li>
+    </a>
+  </ul>
   <div class="individual_block">
     <div class="individual_block_content">
-      <ul class="header_menu">
-        <li class="header_menu_button_active">
-          <span class="header_menu_button_text">Главная</span>
+      <ul id="menu" class="header_menu">
+        <li id="open_menu_button" class="header_menu_button">
+          <span class="header_menu_button_text">Меню</span>
         </li>
-        <a class="a" href="javascript://0" onclick="slowScroll('#books_block')">
-          <li class="header_menu_button">
-            <span class="header_menu_button_text">Обо мне</span>
-          </li>
-        </a>
-        <a class="a" href="javascript://0" onclick="slowScroll('#portfolio_block')">
-          <li class="header_menu_button">
-            <span class="header_menu_button_text">Портфолио</span>
-          </li>
-        </a>
-        <a class="a" href="javascript://0" onclick="slowScroll('#footer_block')">
-          <li class="header_menu_button">
-            <span class="header_menu_button_text">Контакты</span>
-          </li>
-        </a>
+        <li style="width: 100%;">
+          <ul class="computer_menu_version">
+            <li class="header_menu_button_active">
+              <span class="header_menu_button_text">Главная</span>
+            </li>
+            <a class="a" href="javascript://0" onclick="slowScroll('#books_block')">
+              <li class="header_menu_button">
+                <span class="header_menu_button_text">Обо мне</span>
+              </li>
+            </a>
+            <a class="a" href="javascript://0" onclick="slowScroll('#portfolio_block')">
+              <li class="header_menu_button">
+                <span class="header_menu_button_text">Портфолио</span>
+              </li>
+            </a>
+            <a class="a" href="javascript://0" onclick="slowScroll('#footer_block')">
+              <li class="header_menu_button">
+                <span class="header_menu_button_text">Контакты</span>
+              </li>
+            </a>
+          </ul>
+        </li>
       </ul>
-      <h1 id="name" class="main_header_text">
-        Денис
-      </h1>
-      <h1 class="main_header_red_text" id="surname">
-        Босый.
-      </h1>
+      <div class="name_block">
+        <h1 id="name" class="main_header_text">
+          Денис
+        </h1>
+        <h1 class="main_header_red_text" id="surname">
+          Босый.
+        </h1>
+      </div>
       <div class="individual_text_block">
         <h2 class="main_individual_text_header">
           HTML, CSS, JS
@@ -45,6 +77,7 @@
           Открыт к совместным проектам и сотрудничеству в сфере Web программирования
         </p>
       </div>
+      <img src="images/cat.gif" alt="friendly_cat" class="gif" />
     </div>
   </div>
   <div class="books_block" id="books_block">
@@ -56,13 +89,16 @@
         <div class="slider__item">
           <img class="slider_image" src="images/rich_person_babylon_book.png" alt="Первая из серии книг, которую я прочитал в 11 классе" />
           <div class="description_block">
-            <p class="description_block_text">Хорошая книга об истории денег.</p>
+            <p class="description_block_text">Книга о том, что богатым может стать каждый. Для того, чтобы стать таким нужно измениться. Здесь говорится о том, что существует непреложный закон денег, который позволяет каждому заработать столько, сколько он захочет. Денежное благополучие
+              - один из проводников в счастливую жизнь. Деньги нужно зарабатывать на деле, данном тебе Богом. </p>
           </div>
         </div>
         <div class="slider__item">
           <img class="slider_image" src="images/ferrari_book.png" alt="Здесь мне понравилось, как автор сочетает восточную мудрость и жизнь в американской гонке за успехом" />
           <div class="description_block">
-            <p class="description_block_text">Хорошая книга об американской жизни адвокатов в Нью Йорке.</p>
+            <p class="description_block_text">Книга о том, что 24 часа, 7 дней в неделю, 12 месяцев в год, работать без остановки - бесперспективно. Адвокат из Нью-Йорка после обретения смысла жизни у монахов вернулся в Нью-Йорк и стал делиться мудростью восточных товарищей со своими
+              коллегами по работе. Притча дала осознание важности направления развития в жизни и "шахматного" мышления.
+            </p>
           </div>
         </div>
         <div class="slider__item">

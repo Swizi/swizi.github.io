@@ -24,13 +24,17 @@ html {
 
 .a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .individual_block {
   display: flex;
   background-image: url(../images/background_image.png);
+  background-size: cover;
+  background-position: center center;
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
   filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.4));
 }
 
@@ -65,6 +69,40 @@ html {
   background-color: #333333;
   opacity: 0.5;
   transition: 0.5s;
+}
+
+#open_menu_button {
+  display: none;
+}
+
+#dropdown_menu {
+  position: absolute;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+  background-color: #FFFFFF;
+  height: 100%;
+  list-style: none;
+  animation: openMenu 1s ease-out;
+  top: 0;
+}
+
+.computer_menu_version {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100%;
+  align-items: center;
+}
+
+.gif {
+  display: none;
+  height: 133px;
+  width: 150px;
 }
 
 .header_menu_button_text {
@@ -470,4 +508,85 @@ html {
   line-height: 24px;
   color: #993333;
   font-family: "Gotham Pro Light";
+}
+
+
+/* Медиа запросы */
+
+@media (max-width: 1500px) {
+  .individual_block_content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .header_menu {
+    width: 90%;
+    align-self: center;
+  }
+  .name_block,
+  .individual_text_block {
+    margin-left: 35%;
+  }
+  .main_header_text,
+  .main_header_red_text {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .individual_block_content {
+    margin: 10px 0 0 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .name_block,
+  .individual_text_block {
+    margin-left: 0;
+  }
+  .main_header_text {
+    margin-top: 0;
+  }
+  .main_header_text,
+  .main_header_red_text {
+    font-size: 85px;
+  }
+  .header_menu {
+    flex-direction: column;
+  }
+  .header_menu_button,
+  .header_menu_button_active {
+    margin-top: 30px;
+  }
+  .individual_block {
+    background: #333333;
+  }
+  .individual_text_block {
+    width: 556px;
+    margin: 0;
+  }
+  .main_individual_text_header {
+    font-size: 22px;
+  }
+  .main_individual_text {
+    font-size: 18px;
+    margin: 0;
+  }
+  #open_menu_button {
+    display: flex;
+    margin: 0;
+  }
+  .computer_menu_version {
+    display: none;
+  }
+  .gif {
+    display: block;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
 }

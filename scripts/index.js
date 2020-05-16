@@ -1,6 +1,8 @@
 // function([string1, string2],target id,[color1,color2])    
 // consoleText(["Босый Денис.", 'HTML, CSS, JS', 'Открыт к сотрудничеству'], "name", ["#FFFFFF", "#CC3333", "#FFFFFF"]);
+var isMenuOpen = false;
 
+document.getElementById("open_menu_button").onclick = function() { changeMenu() }
 document.getElementById("name").onclick = function() { consoleText("Денис Босый.", "name", "surname", ["#FFFFFF", "#CC3333"]) }
 document.getElementById("surname").onclick = function() { consoleText("Денис Босый.", "name", "surname", ["#FFFFFF", "#CC3333"]) }
 
@@ -77,4 +79,28 @@ function slowScroll(id) {
     scrollTop: $(id).offset().top + offset
   }, 500);
   return false;
+}
+
+function changeMenu() {
+  isMenuOpen = !isMenuOpen;
+  document.getElementById("dropdown_menu").style.display = "flex";
+  // if (isMenuOpen) {
+  //   document.getElementById("menu").style.position = "absolute";
+  //   document.getElementById("menu").style.backroundColor = "#FFFFFF";
+  //   document.getElementById("menu").style.zIndex = "10";
+  //   document.getElementById("menu").style.width = "100%";
+  //   document.getElementById("menu").style.height = "100%";
+  //   document.getElementById("dropdown_menu").style.display = "flex";
+  // } else {
+  //   document.getElementById("menu").style.position = "relative";
+  //   document.getElementById("menu").style.backroundColor = "#333333";
+  //   document.getElementById("dropdown_menu").style.display = "none";
+  //   document.getElementById("dropdown_menu").style.height = "0";
+  // }
+
+}
+
+function closeMenu() {
+  isMenuOpen = !isMenuOpen;
+  document.getElementById("dropdown_menu").style.display = "none";
 }
