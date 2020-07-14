@@ -513,7 +513,37 @@ html {
 
 /* Медиа запросы */
 
+@media (max-width: 1700px) {
+  .books_slider .slider__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .books_slider .description_block {
+    width: 80%;
+    margin: 30px 0 0 0;
+  }
+  .books_slider .slider__item .slider_image {
+    margin: 0;
+  }
+  .books_block_header_text {
+    font-size: 62px;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .portfolio_slider .slick-arrow {
+    top: 100%;
+  }
+}
+
 @media (max-width: 1500px) {
+  .portfolio_slider .slider_image {
+    width: 680px;
+    height: 370px;
+  }
   .individual_block_content {
     margin-left: 0;
     width: 100%;
@@ -533,6 +563,10 @@ html {
 }
 
 @media (max-width: 1020px) {
+  .portfolio_slider .slider_image {
+    width: 453px;
+    height: 247px;
+  }
   .individual_block_content {
     margin: 10px 0 0 0;
     align-items: center;
@@ -580,7 +614,62 @@ html {
   .gif {
     display: block;
   }
+  .portfolio_slider .slick-arrow.slick-next,
+  .portfolio_slider .slick-arrow.slick-prev {
+    background-size: 95px 135px;
+    top: 400px;
+  }
+  .portfolio_slider .slick-arrow.slick-next {
+    right: -40px;
+  }
 }
+
+@media (max-width: 700px) {
+  .book_carousel_block {
+    margin: 80px 0 80px 0;
+  }
+  .books_slider .slider__item .slider_image {
+    width: 305;
+    height: 340px;
+  }
+  .books_slider .description_block_text {
+    font-size: 18px;
+  }
+  .portfolio_slider .slider__item .slider_image {
+    display: none;
+  }
+  .portfolio_slider .slick-arrow.slick-next,
+  .portfolio_slider .slick-arrow.slick-prev {
+    top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main_header_text,
+  .main_header_red_text {
+    font-size: 50px;
+  }
+  .individual_text_block {
+    /* width: 75%; */
+    display: none;
+  }
+}
+
+@media (max-width:450px) {
+  .books_slider .slider__item {
+    width: 90% !important;
+  }
+  .books_slider .description_block {
+    width: 65%;
+  }
+  .books_slider .description_block_text {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+
+/* Keyframes */
 
 @keyframes openMenu {
   0% {
