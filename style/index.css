@@ -319,11 +319,12 @@ html {
 .portfolio_header_text {
   font-size: 72px;
   letter-spacing: -4px;
-  line-height: 24px;
+  line-height: 54px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-weight: 800;
   margin: 150px 0 80px 0;
+  text-align: center;
 }
 
 .portfolio_slider .slider__item {
@@ -500,6 +501,7 @@ html {
   color: #333333;
   font-family: "Gotham Pro Light";
   margin: 0 0 37px 0;
+  text-align: center;
 }
 
 .footer_red_text {
@@ -635,12 +637,24 @@ html {
   .books_slider .description_block_text {
     font-size: 18px;
   }
-  .portfolio_slider .slider__item .slider_image {
+  .portfolio_slider .slider__item .portfolio_slider_text {
     display: none;
   }
   .portfolio_slider .slick-arrow.slick-next,
   .portfolio_slider .slick-arrow.slick-prev {
-    top: 150px;
+    top: 210px;
+  }
+  .portfolio_slider .slick-arrow {
+    width: 80px;
+  }
+  .portfolio_slider .slick-arrow.slick-next {
+    right: 0;
+  }
+  .portfolio_slider {
+    width: 95%;
+  }
+  .portfolio_header_text {
+    font-size: 56px;
   }
 }
 
@@ -655,6 +669,12 @@ html {
   }
 }
 
+@media (max-width: 550px) {
+  .description_block {
+    display: none;
+  }
+}
+
 @media (max-width:450px) {
   .books_slider .slider__item {
     width: 90% !important;
@@ -665,6 +685,10 @@ html {
   .books_slider .description_block_text {
     font-size: 16px;
     width: 90%;
+  }
+  .main_header_text,
+  .main_header_red_text {
+    font-size: 46px;
   }
 }
 
