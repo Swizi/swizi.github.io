@@ -521,6 +521,11 @@ html {
   font-family: "Gotham Pro Light";
 }
 
+.cat_gif{
+  display: none;
+  width: 270px;
+  height: 270px;
+}
 
 /* Медиа запросы */
 
@@ -664,6 +669,9 @@ html {
   }
   .portfolio_header_text {
     font-size: 56px;
+  }
+  .cat_gif{
+    display: block;
   }
 }
 

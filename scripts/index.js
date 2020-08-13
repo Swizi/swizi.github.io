@@ -84,6 +84,7 @@ function slowScroll(id) {
 function changeMenu() {
   isMenuOpen = !isMenuOpen;
   document.getElementById("dropdown_menu").style.display = "flex";
+  document.body.style.overflow = "hidden";
   // if (isMenuOpen) {
   //   document.getElementById("menu").style.position = "absolute";
   //   document.getElementById("menu").style.backroundColor = "#FFFFFF";
@@ -103,4 +104,5 @@ function changeMenu() {
 function closeMenu() {
   isMenuOpen = !isMenuOpen;
   document.getElementById("dropdown_menu").style.display = "none";
+  document.body.style.overflow = "scroll";
 }
